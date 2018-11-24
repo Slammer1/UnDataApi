@@ -55,6 +55,7 @@ namespace Tests
             Assert.AreEqual(firstFlow.AgencyId, "ESTAT");
             Assert.AreEqual(firstFlow.Version, "1.0");
             Assert.AreEqual(firstFlow.IsFinal, true);
+            var x = 0;
         }
 
         [Test]
