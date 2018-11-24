@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--NSI Web Service v6.8.0-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+<Header>
+<ID>IDREF1</ID>
+<Test>false</Test>
+<Prepared>2018-11-24T00:20:53.4925135+01:00</Prepared>
+<Sender id="Unknown"/>
+<Receiver id="Unknown"/>
+</Header>
+<Structures>
+<Dataflows xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+<Dataflow id="DF_UNData_UNFCC" isFinal="true" version="1.0" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:DF_UNData_UNFCC(1.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX_GHG_UNDATA</Name>
+<Structure>
+<Ref class="DataStructure" id="DSD_GHG_UNDATA" xmlns="" version="1.0" agencyID="UNSD" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="NASEC_IDCFINA_A" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_A(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Annual financial accounts</Name>
+<Structure>
+<Ref class="DataStructure" id="NA_SEC" xmlns="" version="1.9" agencyID="ESTAT" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="NASEC_IDCFINA_Q" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_Q(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Quarterly financial accounts</Name>
+<Structure>
+<Ref class="DataStructure" id="NA_SEC" xmlns="" version="1.9" agencyID="ESTAT" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="NASEC_IDCNFSA_A" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_A(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Annual non-financial accounts</Name>
+<Structure>
+<Ref class="DataStructure" id="NA_SEC" xmlns="" version="1.9" agencyID="ESTAT" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="NASEC_IDCNFSA_Q" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_Q(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Quarterly non-financial accounts</Name>
+<Structure>
+<Ref class="DataStructure" id="NA_SEC" xmlns="" version="1.9" agencyID="ESTAT" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="NA_MAIN" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NA_MAIN(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NA Main Aggregates</Name>
+<Structure>
+<Ref class="DataStructure" id="NA_MAIN" xmlns="" version="1.9" agencyID="ESTAT" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="DF_UNDATA_MDG" isFinal="true" version="1.2" agencyID="IAEG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG:DF_UNDATA_MDG(1.2)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX-MDGs</Name>
+<Structure>
+<Ref class="DataStructure" id="MDG" xmlns="" version="1.2" agencyID="IAEG" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="DF_UNData_UIS" isFinal="true" version="1.1" agencyID="UIS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:DF_UNData_UIS(1.1)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX_UIS_UNData</Name>
+<Structure>
+<Ref class="DataStructure" id="UIS_UNData" xmlns="" version="1.1" agencyID="UIS" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="DF_UNDATA_COUNTRYDATA" isFinal="true" version="1.4" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_COUNTRYDATA(1.4)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX-CountryData</Name>
+<Structure>
+<Ref class="DataStructure" id="CountryData" xmlns="" version="1.4" agencyID="UNSD" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="DF_UNDATA_SDG_PILOT" isFinal="true" version="1.0" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SDG_PILOT(1.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sustainable Development Goals Pilot Exchange</Name>
+<Structure>
+<Ref class="DataStructure" id="SDG" xmlns="" version="0.4" agencyID="UNSD" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="DF_UNDATA_WPP" isFinal="false" version="2.0" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_WPP(2.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">World Population Prospects</Name>
+<Structure>
+<Ref class="DataStructure" id="DSD_WPP_UNDATA" xmlns="" version="2.0" agencyID="UNSD" package="datastructure"/>
+</Structure>
+</Dataflow>
+<Dataflow id="DF_UNDATA_WDI" isFinal="true" version="1.0" agencyID="WB" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WB:DF_UNDATA_WDI(1.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WB World Development Indicators</Name>
+<Structure>
+<Ref class="DataStructure" id="WDI" xmlns="" version="1.0" agencyID="WB" package="datastructure"/>
+</Structure>
+</Dataflow>
+</Dataflows>
+</Structures>
+</Structure>
