@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace UnDataApi.DataModel
 {
-    [XmlRoot("Dataflows")]
-    public class Dataflows
+    public class LocalRepresentation
     {
-        public List<DataFlow> Flows { get; set; }
+        public Enumeration Enumeration { get; set; }
+
+        public EnumerationFormat Format { get; set; }
     }
 }

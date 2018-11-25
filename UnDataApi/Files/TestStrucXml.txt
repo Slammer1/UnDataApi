@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--NSI Web Service v6.8.0-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+<Header>
+<ID>IDREF49</ID>
+<Test>false</Test>
+<Prepared>2018-11-25T00:03:36.0801529+01:00</Prepared>
+<Sender id="Unknown"/>
+<Receiver id="Unknown"/>
+</Header>
+<Structures>
+<DataStructures xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+<DataStructure id="NA_MAIN" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:NA_MAIN(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NA Main Aggregates</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:NA_MAIN(1.9).DimensionDescriptor">
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:NA_MAIN(1.9).AttributeDescriptor">
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:NA_MAIN(1.9).MeasureDescriptor">
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="NA_SEC" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:NA_SEC(1.9)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NA Sector Accounts & Government Finance</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:NA_SEC(1.9).DimensionDescriptor">
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:NA_SEC(1.9).AttributeDescriptor">
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:NA_SEC(1.9).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:NA_SEC(1.9).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="Double" maxLength="15"/>
+</LocalRepresentation>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="MDG" isFinal="true" version="1.2" agencyID="IAEG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=IAEG:MDG(1.2)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX-MDGs</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=IAEG:MDG(1.2).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SERIES" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="SERIES" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SERIES_MDG" xmlns="" version="4.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).UNIT" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MDG" xmlns="" version="2.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).LOCATION" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="LOCATION" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_LOCATION_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="AGE_GROUP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).AGE_GROUP" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="AGE_GROUP" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AGE_GROUP_MDG" xmlns="" version="2.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SEX" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="SEX" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SEX_MDG" xmlns="" version="2.1" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).REF_AREA" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_AREA_MDG" xmlns="" version="4.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SOURCE_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=IAEG:MDG(1.2).SOURCE_TYPE" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_TYPE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SOURCE_TYPE_MDG" xmlns="" version="2.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=IAEG:MDG(1.2).TIME_PERIOD" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=IAEG:MDG(1.2).AttributeDescriptor">
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT_SDMX" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).TIME_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_DETAIL" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="NATURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).NATURE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="NATURE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NATURE_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="SOURCE_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).SOURCE_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_DETAIL" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=IAEG:MDG(1.2).FOOTNOTES" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="FOOTNOTES" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=IAEG:MDG(1.2).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=IAEG:MDG(1.2).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="UIS_UNData" isFinal="true" version="1.1" agencyID="UIS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UIS:UIS_UNData(1.1)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX_UIS_UNData</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UIS:UIS_UNData(1.1).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).SERIES" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="SERIES" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SERIES_UNData" xmlns="" version="1.0" agencyID="UIS" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).UNIT" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).LOCATION" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="LOCATION" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_LOCATION_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="AGE_GROUP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).AGE_GROUP" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="AGE_GROUP" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AGE_GROUP_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).SEX" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="SEX" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SEX_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).REF_AREA" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_AREA_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SOURCE_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UIS:UIS_UNData(1.1).SOURCE_TYPE" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_TYPE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SOURCE_TYPE" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UIS:UIS_UNData(1.1).TIME_PERIOD" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<Group id="SiblingGroup" urn="urn:sdmx:org.sdmx.infomodel.datastructure.GroupDimensionDescriptor=UIS:UIS_UNData(1.1).SiblingGroup">
+<GroupDimension>
+<DimensionReference>
+<Ref id="SERIES" xmlns=""/>
+</DimensionReference>
+</GroupDimension>
+<GroupDimension>
+<DimensionReference>
+<Ref id="LOCATION" xmlns=""/>
+</DimensionReference>
+</GroupDimension>
+<GroupDimension>
+<DimensionReference>
+<Ref id="AGE_GROUP" xmlns=""/>
+</DimensionReference>
+</GroupDimension>
+<GroupDimension>
+<DimensionReference>
+<Ref id="SEX" xmlns=""/>
+</DimensionReference>
+</GroupDimension>
+<GroupDimension>
+<DimensionReference>
+<Ref id="REF_AREA" xmlns=""/>
+</DimensionReference>
+</GroupDimension>
+</Group>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UIS:UIS_UNData(1.1).AttributeDescriptor">
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UIS_UNData(1.1).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT_SDMX" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UIS_UNData(1.1).TIME_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_DETAIL" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="NATURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UIS_UNData(1.1).NATURE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="NATURE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NATURE_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="SOURCE_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UIS_UNData(1.1).SOURCE_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_DETAIL" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UIS:UIS_UNData(1.1).FOOTNOTES" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="FOOTNOTES" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UIS:UIS_UNData(1.1).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UIS:UIS_UNData(1.1).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="CountryData" isFinal="true" version="1.4" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:CountryData(1.4)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDMX-CountryData</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:CountryData(1.4).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SERIES" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="SERIES" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SERIES_COUNTRY_DATA" xmlns="" version="0.9" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).UNIT" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_COUNTRY_DATA" xmlns="" version="0.9" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).LOCATION" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="LOCATION" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_LOCATION_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="AGE_GROUP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).AGE_GROUP" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="AGE_GROUP" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AGE_GROUP_COUNTRY_DATA" xmlns="" version="0.9" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SEX" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="SEX" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SEX_MDG" xmlns="" version="2.1" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).REF_AREA" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_AREA_MDG" xmlns="" version="4.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SOURCE_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:CountryData(1.4).SOURCE_TYPE" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_TYPE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SOURCE_TYPE_MDG" xmlns="" version="2.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:CountryData(1.4).TIME_PERIOD" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:CountryData(1.4).AttributeDescriptor">
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT_SDMX" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).TIME_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_DETAIL" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="NATURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).NATURE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="NATURE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NATURE_MDG" xmlns="" version="1.0" agencyID="IAEG" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="SOURCE_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).SOURCE_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_DETAIL" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:CountryData(1.4).FOOTNOTES" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="FOOTNOTES" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:CountryData(1.4).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:CountryData(1.4).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="IAEG" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="DSD_GHG_UNDATA" isFinal="true" version="1.0" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_GHG_UNDATA(1.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Green House Gas DSD</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_GHG_UNDATA(1.0).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).INDICATOR" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="INDICATOR" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_INDICATOR" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).REF_AREA" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_AREA" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_GHG_UNDATA(1.0).UNIT" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_GHG_UNDATA(1.0).TIME_PERIOD" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_GHG_UNDATA(1.0).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_GHG_UNDATA(1.0).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="DSD_WPP_UNDATA" isFinal="true" version="2.0" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:DSD_WPP_UNDATA(2.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">World Population Prospects DSD</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:DSD_WPP_UNDATA(2.0).DimensionDescriptor">
+<Dimension id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).INDICATOR" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="INDICATOR" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_INDICATOR_WPP_UNDATA" xmlns="" version="1.1" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).FREQ" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="AGE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).AGE" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="AGE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AGE_WPP_UNDATA" xmlns="" version="2.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).SEX" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="SEX" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SEX" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).LOCATION" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="LOCATION" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_LOCATION_UNDATA" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).REF_AREA" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AREA" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SCENARIO" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:DSD_WPP_UNDATA(2.0).SCENARIO" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="SCENARIO" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WPP_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SCENARIO_WPP_UNDATA" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:DSD_WPP_UNDATA(2.0).TIME_PERIOD" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:DSD_WPP_UNDATA(2.0).AttributeDescriptor">
+<Attribute id="DATASET_NAME" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).DATASET_NAME" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="DATASET_NAME" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DATASET_SOURCE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).DATASET_SOURCE" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="DATASET_SOURCE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DATASET_DESC" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).DATASET_DESC" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="DATASET_DESC" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNDATA_LASTUPDATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).UNDATA_LASTUPDATE" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNDATA_LASTUPDATE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNDATA_NEXTUPDATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).UNDATA_NEXTUPDATE" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNDATA_NEXTUPDATE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="METADATA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).METADATA" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="METADATA" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).UNIT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_WPP_UNDATA" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_SPAN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:DSD_WPP_UNDATA(2.0).TIME_SPAN" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_SPAN" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:DSD_WPP_UNDATA(2.0).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:DSD_WPP_UNDATA(2.0).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_UNDATA"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="SDG" isFinal="true" version="0.4" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG(0.4)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDGs DSD</Name>
+<Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Data Structure Definition for Sustainable Development Goals Indicators.</Description>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:SDG(0.4).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ" xmlns="" version="2.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REPORTING_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).REPORTING_TYPE" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="REPORTING_TYPE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REPORTING_TYPE" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).SERIES" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="SERIES" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SDG_SERIES" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).REF_AREA" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AREA" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).SEX" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="SEX" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SEX" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="AGE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).AGE" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="AGE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AGE" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="URBANISATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).URBANISATION" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="URBANISATION" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_URBANISATION" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="INCOME_WEALTH_QUANTILE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).INCOME_WEALTH_QUANTILE" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="INCOME_WEALTH_QUANTILE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_QUANTILE" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="EDUCATION_LEV" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).EDUCATION_LEV" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="EDUCATION_LEV" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_EDUCATION_LEV" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="OCCUPATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).OCCUPATION" position="10">
+<ConceptIdentity>
+<Ref class="Concept" id="OCCUPATION" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_OCCUPATION" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="CUST_BREAKDOWN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).CUST_BREAKDOWN" position="11">
+<ConceptIdentity>
+<Ref class="Concept" id="CUST_BREAKDOWN" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SDG_CUST_BREAKDOWN" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="COMPOSITE_BREAKDOWN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).COMPOSITE_BREAKDOWN" position="12">
+<ConceptIdentity>
+<Ref class="Concept" id="COMPOSITE_BREAKDOWN" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SDG_COMP_BREAKDOWN" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="DISABILITY_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG(0.4).DISABILITY_STATUS" position="13">
+<ConceptIdentity>
+<Ref class="Concept" id="DISABILITY_STATUS" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_DISABILITY" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG(0.4).TIME_PERIOD" position="14">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:SDG(0.4).AttributeDescriptor">
+<Attribute id="OBS_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).OBS_STATUS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_STATUS" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_OBS_STATUS" xmlns="" version="2.1" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT" xmlns="" version="1.1" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNIT_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UNIT_MEASURE" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MEASURE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MEASURE" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="NATURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).NATURE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="NATURE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NATURE" xmlns="" version="0.4" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_OBS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).COMMENT_OBS" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_OBS" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_COVERAGE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).TIME_COVERAGE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_COVERAGE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UPPER_BOUND" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).UPPER_BOUND" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="UPPER_BOUND" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="LOWER_BOUND" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).LOWER_BOUND" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="LOWER_BOUND" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="BASE_PER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).BASE_PER" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="BASE_PER" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).TIME_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_DETAIL" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="SOURCE_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG(0.4).SOURCE_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_DETAIL" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:SDG(0.4).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG(0.4).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="0.4" maintainableParentID="SDG_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="String"/>
+</LocalRepresentation>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="SDG_PROV" isFinal="true" version="1.0" agencyID="UNSD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=UNSD:SDG_PROV(1.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Temporary dissemination Data Structure Definition for SDG Indicators</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=UNSD:SDG_PROV(1.0).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ" xmlns="" version="2.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).SERIES" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="SERIES" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SERIES_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).UNIT" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).LOCATION" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="LOCATION" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_LOCATION_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="AGE_GROUP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).AGE_GROUP" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="AGE_GROUP" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AGE_GROUP_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SEX" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).SEX" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="SEX" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SEX_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).REF_AREA" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_AREA_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SOURCE_TYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=UNSD:SDG_PROV(1.0).SOURCE_TYPE" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_TYPE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SOURCE_TYPE_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=UNSD:SDG_PROV(1.0).TIME_PERIOD" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=UNSD:SDG_PROV(1.0).AttributeDescriptor">
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG_PROV(1.0).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG_PROV(1.0).TIME_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_DETAIL" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="NATURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG_PROV(1.0).NATURE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="NATURE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NATURE_SDG" xmlns="" version="1.0" agencyID="UNSD" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="SOURCE_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG_PROV(1.0).SOURCE_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="SOURCE_DETAIL" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=UNSD:SDG_PROV(1.0).FOOTNOTES" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="FOOTNOTES" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=UNSD:SDG_PROV(1.0).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=UNSD:SDG_PROV(1.0).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="UNSD" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="MDG_DATA_CONCEPTS"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+<DataStructure id="WDI" isFinal="true" version="1.0" agencyID="WB" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=WB:WDI(1.0)">
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">World Development Indicators</Name>
+<DataStructureComponents>
+<DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=WB:WDI(1.0).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WB:WDI(1.0).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="WB" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WDI"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ_WDI" xmlns="" version="1.0" agencyID="WB" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="SERIES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WB:WDI(1.0).SERIES" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="SERIES" xmlns="" agencyID="WB" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WDI"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SERIES_WDI" xmlns="" version="1.0" agencyID="WB" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WB:WDI(1.0).REF_AREA" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="WB" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WDI"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_AREA_WDI" xmlns="" version="1.0" agencyID="WB" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=WB:WDI(1.0).TIME_PERIOD" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="WB" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WDI"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
+<AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=WB:WDI(1.0).AttributeDescriptor">
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WB:WDI(1.0).UNIT_MULT" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="WB" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WDI"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT_WDI" xmlns="" version="1.0" agencyID="WB" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
+<MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=WB:WDI(1.0).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=WB:WDI(1.0).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="WB" package="conceptscheme" maintainableParentVersion="1.0" maintainableParentID="CS_WDI"/>
+</ConceptIdentity>
+</PrimaryMeasure>
+</MeasureList>
+</DataStructureComponents>
+</DataStructure>
+</DataStructures>
+</Structures>
+</Structure>
