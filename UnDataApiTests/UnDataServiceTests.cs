@@ -8,7 +8,7 @@ using System;
 
 namespace Tests
 {
-    public class Tests
+    public class UnDataServiceTests
     {
         [SetUp]
         public void Setup()
@@ -178,7 +178,7 @@ namespace Tests
             string xmlToParse = "";
             try
             {
-                xmlToParse = File.ReadAllText("Files\\TestStrucXml.txt");
+                xmlToParse = File.ReadAllText("Files\\TestStrucXml.txt", Encoding.GetEncoding("ISO-8859-1"));
             }
             catch (FileNotFoundException e)
             {

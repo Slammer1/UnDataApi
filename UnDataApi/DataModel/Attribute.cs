@@ -16,6 +16,6 @@ namespace UnDataApi.DataModel
 
         public LocalRepresentation LocalRep { get; set; }
 
-        public string AttributeRelationship { get; set; }
+        public AttributeRelationship AttributeRelationship { get; set; }
     }
 }

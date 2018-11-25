@@ -2,9 +2,9 @@
 <!--NSI Web Service v6.8.0-->
 <Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
 <Header>
-<ID>IDREF49</ID>
+<ID>IDREF78</ID>
 <Test>false</Test>
-<Prepared>2018-11-25T00:03:36.0801529+01:00</Prepared>
+<Prepared>2018-11-25T23:40:20.5675035+01:00</Prepared>
 <Sender id="Unknown"/>
 <Receiver id="Unknown"/>
 </Header>
@@ -14,22 +14,2824 @@
 <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NA Main Aggregates</Name>
 <DataStructureComponents>
 <DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:NA_MAIN(1.9).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ" xmlns="" version="2.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="ADJUSTMENT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).ADJUSTMENT" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="ADJUSTMENT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ADJUSTMENT" xmlns="" version="1.4" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).REF_AREA" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AREA" xmlns="" version="1.8" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="COUNTERPART_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).COUNTERPART_AREA" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="COUNTERPART_AREA" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AREA" xmlns="" version="1.8" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).REF_SECTOR" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_SECTOR" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SECTOR" xmlns="" version="1.6" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="7" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="COUNTERPART_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).COUNTERPART_SECTOR" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="COUNTERPART_SECTOR" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SECTOR" xmlns="" version="1.6" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="7" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="ACCOUNTING_ENTRY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).ACCOUNTING_ENTRY" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="ACCOUNTING_ENTRY" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ACCOUNT_ENTRY" xmlns="" version="1.2" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="STO" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).STO" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="STO" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_STO" xmlns="" version="1.9" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="9" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="INSTR_ASSET" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).INSTR_ASSET" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="INSTR_ASSET" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_INSTR_ASSET" xmlns="" version="1.7" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="7" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="ACTIVITY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).ACTIVITY" position="10">
+<ConceptIdentity>
+<Ref class="Concept" id="ACTIVITY" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ACTIVITY" xmlns="" version="1.5" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="9" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).EXPENDITURE" position="11">
+<ConceptIdentity>
+<Ref class="Concept" id="EXPENDITURE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_COICOP" xmlns="" version="1.1" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="12" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).UNIT_MEASURE" position="12">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MEASURE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT" xmlns="" version="1.9" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="15" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="PRICES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).PRICES" position="13">
+<ConceptIdentity>
+<Ref class="Concept" id="PRICES" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_PRICES" xmlns="" version="1.1" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="TRANSFORMATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_MAIN(1.9).TRANSFORMATION" position="14">
+<ConceptIdentity>
+<Ref class="Concept" id="TRANSFORMATION" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_TRANSFORMATION" xmlns="" version="1.2" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="5" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:NA_MAIN(1.9).TIME_PERIOD" position="15">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
 <AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:NA_MAIN(1.9).AttributeDescriptor">
+<Attribute id="OBS_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).OBS_STATUS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_STATUS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_OBS_STATUS" xmlns="" version="2.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="CONF_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).CONF_STATUS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="CONF_STATUS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_CONF_STATUS" xmlns="" version="1.1" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_OBS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMMENT_OBS" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_OBS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4000" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="EMBARGO_DATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).EMBARGO_DATE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="EMBARGO_DATE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="DateTime"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REF_PERIOD_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REF_PERIOD_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_PERIOD_DETAIL" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_PERIOD_DTL" xmlns="" version="1.0" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="3" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REPYEARSTART" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REPYEARSTART" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REPYEARSTART" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="MonthDay"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REPYEAREND" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REPYEAREND" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REPYEAREND" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="MonthDay"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_FORMAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TIME_FORMAT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_FORMAT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_TIME_FORMAT" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="4" minLength="3" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_PER_COLLECT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TIME_PER_COLLECT" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PER_COLLECT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_TIME_COLLECT" xmlns="" version="1.0" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REF_YEAR_PRICE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).REF_YEAR_PRICE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_YEAR_PRICE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4" minLength="4" textType="Integer"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DECIMALS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).DECIMALS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="DECIMALS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_DECIMALS" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TABLE_IDENTIFIER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TABLE_IDENTIFIER" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TABLE_IDENTIFIER" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_TABLEID" xmlns="" version="1.7" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="12" minLength="3" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TITLE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TITLE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TITLE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="200" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TITLE_COMPL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).TITLE_COMPL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TITLE_COMPL" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4000" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="LAST_UPDATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).LAST_UPDATE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="LAST_UPDATE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="DateTime"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMPILING_ORG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMPILING_ORG" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMPILING_ORG" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ORGANISATION" xmlns="" version="1.7" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="3" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_DSET" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMMENT_DSET" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_DSET" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="1050" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_TS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).COMMENT_TS" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_TS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="1050" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="PRE_BREAK_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).PRE_BREAK_VALUE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="PRE_BREAK_VALUE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="15" textType="Double"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DATA_COMP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).DATA_COMP" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="DATA_COMP" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4000" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="CURRENCY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).CURRENCY" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="CURRENCY" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT" xmlns="" version="1.9" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="15" minLength="2" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DISS_ORG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_MAIN(1.9).DISS_ORG" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="DISS_ORG" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ORGANISATION" xmlns="" version="1.7" agencyID="IMF" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACTIVITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
 <MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:NA_MAIN(1.9).MeasureDescriptor">
+<PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:NA_MAIN(1.9).OBS_VALUE">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="15" textType="Double"/>
+</LocalRepresentation>
+</PrimaryMeasure>
+</MeasureList>
 </DataStructureComponents>
 </DataStructure>
 <DataStructure id="NA_SEC" isFinal="true" version="1.9" agencyID="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:NA_SEC(1.9)">
-<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NA Sector Accounts & Government Finance</Name>
+<Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NA Sector Accounts and Government Finance</Name>
 <DataStructureComponents>
 <DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=ESTAT:NA_SEC(1.9).DimensionDescriptor">
+<Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).FREQ" position="1">
+<ConceptIdentity>
+<Ref class="Concept" id="FREQ" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_FREQ" xmlns="" version="2.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="ADJUSTMENT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).ADJUSTMENT" position="2">
+<ConceptIdentity>
+<Ref class="Concept" id="ADJUSTMENT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ADJUSTMENT" xmlns="" version="1.4" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).REF_AREA" position="3">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_AREA" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AREA" xmlns="" version="1.8" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="COUNTERPART_AREA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).COUNTERPART_AREA" position="4">
+<ConceptIdentity>
+<Ref class="Concept" id="COUNTERPART_AREA" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_AREA" xmlns="" version="1.8" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="REF_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).REF_SECTOR" position="5">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_SECTOR" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SECTOR" xmlns="" version="1.6" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="7" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="COUNTERPART_SECTOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).COUNTERPART_SECTOR" position="6">
+<ConceptIdentity>
+<Ref class="Concept" id="COUNTERPART_SECTOR" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_SECTOR" xmlns="" version="1.6" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="7" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="CONSOLIDATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).CONSOLIDATION" position="7">
+<ConceptIdentity>
+<Ref class="Concept" id="CONSOLIDATION" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_CONSOLIDAT" xmlns="" version="1.3" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="ACCOUNTING_ENTRY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).ACCOUNTING_ENTRY" position="8">
+<ConceptIdentity>
+<Ref class="Concept" id="ACCOUNTING_ENTRY" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ACCOUNT_ENTRY" xmlns="" version="1.2" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="STO" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).STO" position="9">
+<ConceptIdentity>
+<Ref class="Concept" id="STO" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_STO" xmlns="" version="1.9" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="9" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="INSTR_ASSET" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).INSTR_ASSET" position="10">
+<ConceptIdentity>
+<Ref class="Concept" id="INSTR_ASSET" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_INSTR_ASSET" xmlns="" version="1.7" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="7" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="MATURITY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).MATURITY" position="11">
+<ConceptIdentity>
+<Ref class="Concept" id="MATURITY" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_MATURITY" xmlns="" version="1.6" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="EXPENDITURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).EXPENDITURE" position="12">
+<ConceptIdentity>
+<Ref class="Concept" id="EXPENDITURE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_COFOG" xmlns="" version="1.0" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="8" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="UNIT_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).UNIT_MEASURE" position="13">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MEASURE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT" xmlns="" version="1.9" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="15" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="CURRENCY_DENOM" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).CURRENCY_DENOM" position="14">
+<ConceptIdentity>
+<Ref class="Concept" id="CURRENCY_DENOM" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT" xmlns="" version="1.9" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="15" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="VALUATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).VALUATION" position="15">
+<ConceptIdentity>
+<Ref class="Concept" id="VALUATION" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_VALUATION" xmlns="" version="1.5" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="PRICES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).PRICES" position="16">
+<ConceptIdentity>
+<Ref class="Concept" id="PRICES" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_PRICES" xmlns="" version="1.1" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="TRANSFORMATION" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).TRANSFORMATION" position="17">
+<ConceptIdentity>
+<Ref class="Concept" id="TRANSFORMATION" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_TRANSFORMATION" xmlns="" version="1.2" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="5" minLength="1" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<Dimension id="CUST_BREAKDOWN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=ESTAT:NA_SEC(1.9).CUST_BREAKDOWN" position="18">
+<ConceptIdentity>
+<Ref class="Concept" id="CUST_BREAKDOWN" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_CUST_BREAKDOWN" xmlns="" version="1.2" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="3" minLength="2" textType="String"/>
+</LocalRepresentation>
+</Dimension>
+<TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=ESTAT:NA_SEC(1.9).TIME_PERIOD" position="19">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PERIOD" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+</TimeDimension>
+</DimensionList>
 <AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=ESTAT:NA_SEC(1.9).AttributeDescriptor">
+<Attribute id="OBS_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).OBS_STATUS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_STATUS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_OBS_STATUS" xmlns="" version="2.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="CONF_STATUS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).CONF_STATUS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="CONF_STATUS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_CONF_STATUS" xmlns="" version="1.1" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_OBS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).COMMENT_OBS" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_OBS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4000" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="EMBARGO_DATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).EMBARGO_DATE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="EMBARGO_DATE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="DateTime"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REF_PERIOD_DETAIL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).REF_PERIOD_DETAIL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_PERIOD_DETAIL" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_REF_PERIOD_DTL" xmlns="" version="1.0" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="3" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REPYEARSTART" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).REPYEARSTART" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REPYEARSTART" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="MonthDay"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REPYEAREND" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).REPYEAREND" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REPYEAREND" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="MonthDay"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_FORMAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).TIME_FORMAT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_FORMAT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_TIME_FORMAT" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="4" minLength="3" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TIME_PER_COLLECT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).TIME_PER_COLLECT" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TIME_PER_COLLECT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_TIME_COLLECT" xmlns="" version="1.0" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="1" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="CUST_BREAKDOWN_LB" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).CUST_BREAKDOWN_LB" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="CUST_BREAKDOWN_LB" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="1050" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="REF_YEAR_PRICE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).REF_YEAR_PRICE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="REF_YEAR_PRICE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4" minLength="4" textType="Integer"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DECIMALS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).DECIMALS" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="DECIMALS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_DECIMALS" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TABLE_IDENTIFIER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).TABLE_IDENTIFIER" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TABLE_IDENTIFIER" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_NA_TABLEID" xmlns="" version="1.7" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="12" minLength="3" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TITLE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).TITLE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TITLE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="200" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="TITLE_COMPL" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).TITLE_COMPL" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="TITLE_COMPL" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4000" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).UNIT_MULT" assignmentStatus="Mandatory">
+<ConceptIdentity>
+<Ref class="Concept" id="UNIT_MULT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT_MULT" xmlns="" version="1.0" agencyID="SDMX" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="LAST_UPDATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).LAST_UPDATE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="LAST_UPDATE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="25" textType="DateTime"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMPILING_ORG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).COMPILING_ORG" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMPILING_ORG" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ORGANISATION" xmlns="" version="1.7" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="3" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_DSET" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).COMMENT_DSET" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_DSET" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="1050" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<None/>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="OBS_EDP_WBB" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).OBS_EDP_WBB" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="OBS_EDP_WBB" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_EDP_WBB" xmlns="" version="1.0" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COLL_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).COLL_PERIOD" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COLL_PERIOD" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="35" textType="ObservationalTimePeriod"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="COMMENT_TS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).COMMENT_TS" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="COMMENT_TS" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="1050" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="GFS_ECOFUNC" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).GFS_ECOFUNC" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="GFS_ECOFUNC" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_GFS_ECOFUNC" xmlns="" version="1.0" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="6" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="GFS_TAXCAT" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).GFS_TAXCAT" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="GFS_TAXCAT" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_GFS_TAXCAT" xmlns="" version="1.2" agencyID="ESTAT" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="2" minLength="1" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="PRE_BREAK_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).PRE_BREAK_VALUE" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="PRE_BREAK_VALUE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="15" textType="Double"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<PrimaryMeasure>
+<Ref id="OBS_VALUE" xmlns=""/>
+</PrimaryMeasure>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DATA_COMP" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).DATA_COMP" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="DATA_COMP" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<TextFormat maxLength="4000" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="CURRENCY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).CURRENCY" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="CURRENCY" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_UNIT" xmlns="" version="1.9" agencyID="IMF" package="codelist"/>
+</Enumeration>
+<EnumerationFormat maxLength="15" minLength="2" textType="String"/>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+<Attribute id="DISS_ORG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=ESTAT:NA_SEC(1.9).DISS_ORG" assignmentStatus="Conditional">
+<ConceptIdentity>
+<Ref class="Concept" id="DISS_ORG" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
+</ConceptIdentity>
+<LocalRepresentation>
+<Enumeration>
+<Ref class="Codelist" id="CL_ORGANISATION" xmlns="" version="1.7" agencyID="IMF" package="codelist"/>
+</Enumeration>
+</LocalRepresentation>
+<AttributeRelationship>
+<Dimension>
+<Ref id="FREQ" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ADJUSTMENT" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_AREA" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="REF_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="COUNTERPART_SECTOR" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CONSOLIDATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="ACCOUNTING_ENTRY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="STO" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="INSTR_ASSET" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="MATURITY" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="EXPENDITURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="UNIT_MEASURE" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CURRENCY_DENOM" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="VALUATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="PRICES" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="TRANSFORMATION" xmlns=""/>
+</Dimension>
+<Dimension>
+<Ref id="CUST_BREAKDOWN" xmlns=""/>
+</Dimension>
+</AttributeRelationship>
+</Attribute>
+</AttributeList>
 <MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=ESTAT:NA_SEC(1.9).MeasureDescriptor">
 <PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=ESTAT:NA_SEC(1.9).OBS_VALUE">
 <ConceptIdentity>
 <Ref class="Concept" id="OBS_VALUE" xmlns="" agencyID="ESTAT" package="conceptscheme" maintainableParentVersion="1.9" maintainableParentID="CS_NA"/>
 </ConceptIdentity>
 <LocalRepresentation>
-<TextFormat textType="Double" maxLength="15"/>
+<TextFormat maxLength="15" textType="Double"/>
 </LocalRepresentation>
 </PrimaryMeasure>
 </MeasureList>

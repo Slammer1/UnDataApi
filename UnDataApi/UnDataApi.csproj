@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Files\TestStrucXml.txt" />
     <None Remove="Files\TestXml.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Files\TestStrucXml.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\TestXml.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
