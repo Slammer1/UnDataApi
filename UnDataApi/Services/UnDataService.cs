@@ -27,6 +27,10 @@ namespace UnDataApi.Services
             }
         }
 
+        internal void GetCodes(string agencyId, string id)
+        {
+            throw new NotImplementedException();
+        }
 
         public HttpClient UnApiClient = new HttpClient();
 
@@ -36,8 +40,30 @@ namespace UnDataApi.Services
 
 
         }
+        public DataStructure GetDataStructure(string agency, string structureId)
+        {
+            DataStructure structure = GetDataStructureFromUnApi(agency, structureId).Result;
 
-        public async Task<List<DataStructure>> GetAllDataStructures()
+            return structure;
+        }
+
+    public async Task<DataStructure> GetDataStructureFromUnApi(string agency, string structure)
+    {
+        HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/datastructure/" + agency + @"/" + structure);
+        List<DataStructure> localStrucs = new List<DataStructure>();
+        if (response.IsSuccessStatusCode)
+        {
+            Stream stream = response.Content.ReadAsStreamAsync().Result;
+            localStrucs = ProcessStrucXml(stream, localStrucs);
+        }
+
+        if (localStrucs == null)
+        {
+            throw new Exception("Error getting DataFlows");
+        }
+        return localStrucs[0];
+    }
+    public async Task<List<DataStructure>> GetAllDataStructures()
         {
             HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/datastructure/");
             List<DataStructure> localStrucs = new List<DataStructure>();

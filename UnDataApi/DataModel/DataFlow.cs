@@ -19,5 +19,16 @@ namespace UnDataApi.DataModel
         public string AgencyId { get; set; }
 
         public Structure Structure { get; set; }
+
+        public DataStructure DataStructure { get; set; }
+
+        public DataStructure GetDataStructure()
+        {
+            DataStructure structure = new DataStructure();
+            Services.UnDataService service = new Services.UnDataService();
+            structure = service.GetDataStructure(Structure.AgencyId, Structure.Id);
+            return structure;
+
+        }
     }
 }
