@@ -12,11 +12,12 @@ namespace DataAcessApp.Controllers
     public class DataFlowController : Controller
     {
         // GET: DataFlow
-        public ActionResult Index()
+        public ActionResult DataFlowIndex()
         {
             List<DataFlow> flow = new List<DataFlow>();
             UnDataService service = new UnDataService();
-            return View();
+            flow = service.AllDataFlows;
+            return View(flow);
         }
 
         // GET: DataFlow/Details/5
@@ -40,7 +41,7 @@ namespace DataAcessApp.Controllers
             {
                 // TODO: Add insert logic here
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(DataFlowIndex));
             }
             catch
             {
@@ -63,7 +64,7 @@ namespace DataAcessApp.Controllers
             {
                 // TODO: Add update logic here
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(DataFlowIndex));
             }
             catch
             {
@@ -86,7 +87,7 @@ namespace DataAcessApp.Controllers
             {
                 // TODO: Add delete logic here
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(DataFlowIndex));
             }
             catch
             {
