@@ -7,57 +7,59 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 
-<h2>User List</h2>
+<h2>Data Flows</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    Select a dataflow to explore.
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            Diplay Name
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Id)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Id)
-        </th>
-        <th>
+    <thead><tr>
+    <th>
+        @Html.DisplayNameFor(model => model.DisplayName)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.AgencyId)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.Description)
+    </th>
+    <th>
+        @Html.DisplayNameFor(model => model.Id)
+    </th>
+    <th>
 
-        </th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AgencyId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Version)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsFinal)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }, new {
-               @class = "detailsFunc",
-               data_toggle = "modal",
-               data_target = "#myModal",
-               onclick = "emptyModalContent()",
-           }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
-    }
+    </th>
+</tr></thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr onclick="document.location = '/DataFlow/Details/@item.Id';" class="clickable-row">
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisplayName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                @*<td>
+                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                     @Html.ActionLink("Details", "Details", new { id = item.Id }, new {
+                    @class = "detailsFunc",
+                    data_toggle = "modal",
+                    data_target = "#myModal",
+                    onclick = "emptyModalContent()",
+                }) |
+                     @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                 </td>*@
+            </tr>
+        }
+    </tbody>
+   
 
 </table>
 
@@ -71,6 +73,8 @@
     </div>
 </div>
 
+
+
 <script type="text/javascript">
     var emptyModalContent = function () {
         $('#myModal').removeData('bs.modal').find('.modal-content').empty();
@@ -78,6 +82,12 @@
 
     $('#myModal').on('hidden.bs.modal', function () {
         emptyModalContent();
+    });
+
+    jQuery(document).ready(function ($) {
+        $(".clickable-row").click(function () {
+            window.location = $(this).data("href");
+        });
     });
 
 </script>

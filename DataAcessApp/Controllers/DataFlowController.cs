@@ -17,11 +17,15 @@ namespace DataAcessApp.Controllers
             List<DataFlow> flow = new List<DataFlow>();
             UnDataService service = new UnDataService();
             flow = service.AllDataFlows;
+            foreach(DataFlow fl in flow)
+            {
+                fl.GetDataStructure();
+            }
             return View(flow);
         }
 
         // GET: DataFlow/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(string id)
         {
             return View();
         }
