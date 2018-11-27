@@ -11,22 +11,36 @@ namespace DataAcessApp.Controllers
 {
     public class DataFlowController : Controller
     {
+        static UnDataService service;
+        static List<DataFlow> flows;
         // GET: DataFlow
         public ActionResult DataFlowIndex()
         {
-            List<DataFlow> flow = new List<DataFlow>();
-            UnDataService service = new UnDataService();
-            flow = service.AllDataFlows;
-            foreach(DataFlow fl in flow)
-            {
-                fl.GetDataStructure();
-            }
-            return View(flow);
+            flows = new List<DataFlow>();
+            service = new UnDataService();
+            flows = service.AllDataFlows;
+            //foreach(DataFlow fl in flows)
+            //{
+            //    fl.GetDataStructure();
+            //}
+            return View(flows);
         }
 
         // GET: DataFlow/Details/5
         public ActionResult Details(string id)
         {
+            DataFlow flow = new DataFlow();
+            foreach (DataFlow fl in flows)
+            {
+                if(fl.Id == id)
+                {
+                    flow = fl;
+                    break;
+                }
+                
+            }
+            DataStructure structure = flow.GetDataStructure();
+            structure.GetCodeLists();
             return View();
         }
 

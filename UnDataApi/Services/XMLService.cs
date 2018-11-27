@@ -103,7 +103,77 @@ namespace UnDataApi.Services
             reader.Close();
             return localFlows;
         }
-    
+
+        internal static Dictionary<string, string> InitializeCodesFromXml(Stream stream)
+        {
+            XmlDocument document = new XmlDocument();
+            document.Load(stream);
+            Dictionary<string, string> codes = new Dictionary<string, string>();
+            string key = "";
+            string value = "";
+            XmlElement root = document.DocumentElement;
+            XmlNodeList nodes = root.ChildNodes;
+            foreach (XmlNode node in nodes)
+            {
+                if (node.Name == "Structures")
+                {
+                    nodes = node.ChildNodes;
+                    break;
+                }
+            }
+            foreach (XmlNode node in nodes)
+            {
+                if (node.Name == "Codelists")
+                {
+                    nodes = node.ChildNodes;
+                    break;
+                }
+            }
+            foreach (XmlNode node in nodes)
+            {
+                if (node.Name == "Codelist")
+                {
+                    nodes = node.ChildNodes;
+                    break;
+                }
+            }
+            foreach (XmlNode node in nodes)
+            {
+                if (node.Name == "Code")
+                {
+                    foreach (XmlAttribute attribute in node.Attributes)
+                    {
+                        switch (attribute.Name)
+                        {
+                            case "id":
+                                key = attribute.Value;
+                                break;
+                        }
+
+                    }
+                    value = GetValue(node);
+                }
+                if (node.Name == "Name")
+                {
+                    codes.Add("CodeListName", node.InnerText);
+                    continue;
+                }
+                codes.Add(key, value);
+            }
+            return codes;
+        }
+
+        private static string GetValue(XmlNode node)
+        {
+            foreach (XmlNode child in node.ChildNodes)
+            {
+                if (child.Name == "Name")
+                {
+                    return child.InnerText;
+                }
+            }
+            throw new Exception("Error trying to find the codelist name.");
+        }
 
         public static List<DataStructure> InitializeDataStrucsFromXml(Stream stream)
         {

@@ -33,7 +33,8 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr onclick="document.location = '/DataFlow/Details/@item.Id';" class="clickable-row">
+            <tr onmouseover="this.style.cursor='hand';this.style.background='#f4ffcc';" onmouseout="this.style.background='#ffffff';" 
+                onclick="document.location = '/DataFlow/Details/@item.Id';" class="clickable-row">
                 <td>
                     @Html.DisplayFor(modelItem => item.DisplayName)
                 </td>

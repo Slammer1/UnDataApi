@@ -27,9 +27,11 @@ namespace UnDataApi.Services
             }
         }
 
-        internal void GetCodes(string agencyId, string id)
+        public Dictionary<string, string> GetCodes(string agencyId, string id)
         {
-            throw new NotImplementedException();
+            Dictionary<string, string> codes = GetCodeListFromUnApi(agencyId, id).Result;
+
+            return codes;
         }
 
         public HttpClient UnApiClient = new HttpClient();
@@ -43,7 +45,7 @@ namespace UnDataApi.Services
         public DataStructure GetDataStructure(string agency, string structureId)
         {
             DataStructure structure = GetDataStructureFromUnApi(agency, structureId).Result;
-
+            
             return structure;
         }
 
@@ -63,7 +65,30 @@ namespace UnDataApi.Services
         }
         return localStrucs[0];
     }
-    public async Task<List<DataStructure>> GetAllDataStructures()
+        public async Task<Dictionary<string, string>> GetCodeListFromUnApi(string agency, string id)
+        {
+            HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/codelist/" + agency + @"/" + id);
+            Dictionary<string, string> codes = new Dictionary<string, string>();
+            if (response.IsSuccessStatusCode)
+            {
+                Stream stream = response.Content.ReadAsStreamAsync().Result;
+                codes = ProcessCodeXml(stream, codes);
+            }
+
+            if (codes == null)
+            {
+                throw new Exception("Error getting DataFlows");
+            }
+            return codes;
+        }
+
+        private Dictionary<string, string> ProcessCodeXml(Stream stream, Dictionary<string, string> codes)
+        {
+            codes = XMLService.InitializeCodesFromXml(stream);
+            return codes;
+        }
+
+        public async Task<List<DataStructure>> GetAllDataStructures()
         {
             HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/datastructure/");
             List<DataStructure> localStrucs = new List<DataStructure>();

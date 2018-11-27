@@ -1,0 +1,78 @@
+﻿@model IEnumerable<UnDataApi.DataModel.DataFlow>
+
+@{
+    ViewBag.Title = "Select Dimensions";
+}
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+<h2>Data Flows</h2>
+
+<p>
+    Select a dataflow to explore.
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DisplayName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgencyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr onmouseover="this.style.cursor='hand';this.style.background='#f4ffcc';" onmouseout="this.style.background='#ffffff';"
+                onclick="document.location = '/DataFlow/Details/@item.Id';" class="clickable-row">
+                <td>
+                    @Html.DisplayFor(modelItem => item.DisplayName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                @*<td>
+                         @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                         @Html.ActionLink("Details", "Details", new { id = item.Id }, new {
+                        @class = "detailsFunc",
+                        data_toggle = "modal",
+                        data_target = "#myModal",
+                        onclick = "emptyModalContent()",
+                    }) |
+                         @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                     </td>*@
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div id="mainContent" class="modal-content col-sm-12">
+
+
+
+        </div>
+    </div>
+</div>
+

@@ -17,11 +17,18 @@ namespace UnDataApi.DataModel
 
         public Dictionary<string, string> CodeList { get; set; }
 
+        public string CodeListName { get; set; }
+
         public Dictionary<string, string> GetCodeList()
         {
+            if(Representation == null || Representation.Enumeration == null)
+            {
+                return null;
+            }
             Dictionary<string, string> codeList = new Dictionary<string, string>();
             UnDataService service = new UnDataService();
-            service.GetCodes(ConceptId.AgencyId, Id);
+            codeList = service.GetCodes(Representation.Enumeration.AgencyId, Representation.Enumeration.Id);
+            this.CodeList = codeList;
             return codeList;
         }
     }

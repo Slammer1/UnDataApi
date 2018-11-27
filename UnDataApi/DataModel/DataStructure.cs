@@ -23,5 +23,13 @@ namespace UnDataApi.DataModel
         public List<Measure> MeasuresList { get; set; }
 
         public List<Attribute> AttributeList { get; set; }
+
+        public void GetCodeLists()
+        {
+            foreach(Dimension dim in DimensionList)
+            {
+                Dictionary<string, string> codes = dim.GetCodeList();
+            }
+        }
     }
 }
