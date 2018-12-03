@@ -17,6 +17,8 @@ namespace UnDataApi.DataModel
 
         public Dictionary<string, string> CodeList { get; set; }
 
+        public List<Code> Codes { get; set; }
+
         public string CodeListName { get; set; }
 
         public Dictionary<string, string> GetCodeList()
@@ -29,7 +31,22 @@ namespace UnDataApi.DataModel
             UnDataService service = new UnDataService();
             codeList = service.GetCodes(Representation.Enumeration.AgencyId, Representation.Enumeration.Id);
             this.CodeList = codeList;
+            this.CodeListName = codeList["CodeListName"];
+            this.Codes = new List<Code>();
+            SelectedCode = "";
+            foreach(string key in CodeList.Keys)
+            {
+                //if(!key == "")
+                this.Codes.Add(new Code
+                {
+                    Key = key,
+                    Value = CodeList[key],
+
+                });
+            }
             return codeList;
         }
+
+        public string SelectedCode { get; set; }
     }
 }

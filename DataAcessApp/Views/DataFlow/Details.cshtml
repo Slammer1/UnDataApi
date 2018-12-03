@@ -1,4 +1,4 @@
-﻿@model IEnumerable<UnDataApi.DataModel.DataFlow>
+﻿@model UnDataApi.DataModel.DataStructure
 
 @{
     ViewBag.Title = "Select Dimensions";
@@ -7,72 +7,45 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 
-<h2>Data Flows</h2>
+<h2>Dimensions</h2>
 
 <p>
-    Select a dataflow to explore.
+    Select a value for each dimension the data has.
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DisplayName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AgencyId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr onmouseover="this.style.cursor='hand';this.style.background='#f4ffcc';" onmouseout="this.style.background='#ffffff';"
-                onclick="document.location = '/DataFlow/Details/@item.Id';" class="clickable-row">
-                <td>
-                    @Html.DisplayFor(modelItem => item.DisplayName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.AgencyId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                @*<td>
-                         @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                         @Html.ActionLink("Details", "Details", new { id = item.Id }, new {
-                        @class = "detailsFunc",
-                        data_toggle = "modal",
-                        data_target = "#myModal",
-                        onclick = "emptyModalContent()",
-                    }) |
-                         @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                     </td>*@
-            </tr>
-        }
-    </tbody>
-
-
-</table>
-
-<div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-        <div id="mainContent" class="modal-content col-sm-12">
-
-
-
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @foreach (var item in Model.DimensionList.Where(id => id.Id != "TIME_PERIOD"))
+    {
+        <div class="form-group">
+            @*@Html.DisplayFor(model => item.CodeListName)*@
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => item.SelectedCode, new SelectList(item.Codes, "Key", "Value", item.SelectedCode), new { id = "CodeSelect", @class = "form-control" })
+                @*@Html.ValidationMessageFor(model => model.EmpTypeSelected, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+        @*<script>
+            var empTypeName = @Model.DimensionList.;
+            var dd = document.getElementById("EmpTypeSelected");
+            var o = document.createElement("option");
+            o.text = "-- Select an Employee Type --";
+            o.value = "";
+            o.selected = empTypeName == "";
+            dd.add(o, 0);
+        </script>*@
+    }
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
         </div>
     </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
 </div>
 

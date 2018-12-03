@@ -41,7 +41,7 @@ namespace DataAcessApp.Controllers
             }
             DataStructure structure = flow.GetDataStructure();
             structure.GetCodeLists();
-            return View();
+            return View(structure);
         }
 
         // GET: DataFlow/Create
