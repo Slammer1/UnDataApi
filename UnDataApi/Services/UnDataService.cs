@@ -39,8 +39,6 @@ namespace UnDataApi.Services
         public UnDataService()
         {
 
-
-
         }
         public DataStructure GetDataStructure(string agency, string structureId)
         {
@@ -65,6 +63,37 @@ namespace UnDataApi.Services
         }
         return localStrucs[0];
     }
+
+        public async Task<QueryResult> GetDataFromDataFlowAndDimensions(string dataflowId, List<string> codes)
+        {
+            QueryResult queryResult = new QueryResult();
+            queryResult.BaseUrl = "http://data.un.org/ws/rest/data/";
+            string codesString = "";
+            foreach(string code in codes)
+            {
+                codesString += code + ".";
+            }
+            queryResult.Query = dataflowId + "/" + codesString;
+            HttpResponseMessage response = await UnApiClient.GetAsync(queryResult.BaseUrl + queryResult.Query);
+            if (response.IsSuccessStatusCode)
+            {
+                Stream stream = response.Content.ReadAsStreamAsync().Result;
+                queryResult.DataSet = ProcessQueryXml(stream);
+            }
+
+            if (queryResult.DataSet == null)
+            {
+                throw new Exception("Error getting Data");
+            }
+            return queryResult;
+        }
+
+        private DataSet ProcessQueryXml(Stream stream)
+        {
+            DataSet data = XMLService.ProcessQuery(stream);
+            return data;
+        }
+
         public async Task<Dictionary<string, string>> GetCodeListFromUnApi(string agency, string id)
         {
             HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/codelist/" + agency + @"/" + id);
@@ -116,6 +145,24 @@ namespace UnDataApi.Services
         public async Task<List<DataFlow>> GetAllDataFlows()
         {
             HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/dataflow/");
+            List<DataFlow> localFlows = new List<DataFlow>();
+            if (response.IsSuccessStatusCode)
+            {
+                Stream stream = response.Content.ReadAsStreamAsync().Result;
+                localFlows = ProcessXml(stream, localFlows);
+            }
+
+            if (localFlows == null)
+            {
+                throw new Exception("Error getting DataFlows");
+            }
+            return localFlows;
+
+        }
+
+        public async Task<List<DataFlow>> GetAllDataFromDataFlow(string dataflowId)
+        {
+            HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/data/" + dataflowId);
             List<DataFlow> localFlows = new List<DataFlow>();
             if (response.IsSuccessStatusCode)
             {

@@ -104,6 +104,95 @@ namespace UnDataApi.Services
             return localFlows;
         }
 
+        internal static DataSet ProcessQuery(Stream stream)
+        {
+            List<DataSeries> seriesList = new List<DataSeries>();
+            DataSet localSet = new DataSet();
+            localSet.DataSeries = seriesList;
+            XmlReader reader = XmlReader.Create(stream);
+            reader.ReadToDescendant("message:DataSet");
+            DataSeries series = new DataSeries();
+            do
+            {
+                switch (reader.NodeType)
+                {
+                    case XmlNodeType.Element:
+                        switch (reader.Name)
+                        {
+                            case "generic:SeriesKey":
+                                series = new DataSeries();
+                                while(reader.ReadToDescendant("generic:Value"))
+                                {
+                                    do
+                                    {
+                                        string key = "", value = "";
+                                        while (reader.MoveToNextAttribute())
+                                        {
+
+                                            switch (reader.Name)
+                                            {
+                                                case "id":
+                                                    key = reader.Value;
+                                                    break;
+
+                                                case "value":
+                                                    value = reader.Value;
+                                                    series.Dimensions.Add(key, value);
+                                                    break;
+                                            }
+
+                                        }
+                                    } while (reader.ReadToNextSibling("generic:Value"));
+                                    
+                                }
+                                seriesList.Add(series);
+                                break;
+                            case "generic:Obs":
+                                DataPoint point = new DataPoint();
+                                while (reader.ReadToDescendant("generic:ObsDimension"))
+                                {
+                                    while (reader.MoveToNextAttribute())
+                                    {
+                                        switch (reader.Name)
+                                        {
+                                            case "id":
+                                                point.ObsDimension = reader.Value;
+                                                break;
+
+                                            case "value":
+                                                point.Key = reader.Value;
+                                                break;
+                                        }
+
+                                    }
+                                }
+                                while (reader.ReadToNextSibling("generic:ObsValue"))
+                                {
+                                    while (reader.MoveToNextAttribute())
+                                    {
+                                        switch (reader.Name)
+                                        {
+                                           
+                                            case "value":
+                                                point.Value = reader.Value;
+                                                series.DataPoints.Add(point);
+                                                break;
+                                        }
+
+                                    }
+                                }
+                                break;
+                        }
+
+                        break;
+                    case XmlNodeType.Text:
+                        break;
+                }
+            } while (reader.Read());
+            reader.Close();
+            return localSet;
+        }
+
         internal static Dictionary<string, string> InitializeCodesFromXml(Stream stream)
         {
             XmlDocument document = new XmlDocument();

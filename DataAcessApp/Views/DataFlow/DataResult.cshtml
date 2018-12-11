@@ -1,0 +1,35 @@
+﻿@model UnDataApi.DataModel.QueryResult
+
+@{
+    ViewBag.Title = Model.DisplayName;
+}
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DataResult</title>
+</head>
+<body>
+
+    <div>
+        <h4>QueryResult</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.DisplayName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DisplayName)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</body>
+</html>

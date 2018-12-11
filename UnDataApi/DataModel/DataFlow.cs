@@ -63,8 +63,37 @@ namespace UnDataApi.DataModel
 
         private Dictionary<string, string> DescriptionList = new Dictionary<string, string>();
         private Dictionary<string, string> DisplayNames = new Dictionary<string, string>();
+        
 
+        /// <summary>
+        /// Empty constructor for a DataFlow object.
+        /// </summary>
         public DataFlow()
+        {
+            SetDescriptions();
+            SetDisplayNames();
+
+        }
+        /// <summary>
+        /// Sets the display names for the dataflow.
+        /// </summary>
+        private void SetDisplayNames()
+        {
+            DisplayNames.Add("DF_UNData_UNFCC", "Environmental Data");
+            DisplayNames.Add("DF_UNData_UIS", "Education Data");
+            DisplayNames.Add("DF_UNDATA_MDG", "Development Data (Population, poverty, unemployment, etc.)");
+            DisplayNames.Add("DF_UNDATA_COUNTRYDATA", "Development Data (Population, poverty, unemployment, etc.)");
+            DisplayNames.Add("DF_UNDATA_WDI", "Development Data (Financial growth, military capability, imports and exports, etc.)");
+            DisplayNames.Add("DF_UNDATA_SDG_PILOT", "Development Data - Sustainable development goals");
+            DisplayNames.Add("DF_UNDATA_WPP", "World Population Prospects");
+            DisplayNames.Add("NA_MAIN", "National Accounts Aggregate Data");
+            DisplayNames.Add("NASEC_IDCNFSA_A", "Annual Non-Financial Accounts");
+            DisplayNames.Add("NASEC_IDCFINA_Q", "Quarterly Financial Accounts");
+            DisplayNames.Add("NASEC_IDCFINA_A", "Annual Financial Accounts");
+            DisplayNames.Add("NASEC_IDCNFSA_Q", "Quarterly Non-Financial Accounts");
+        }
+
+        private void SetDescriptions()
         {
             DescriptionList.Add("DF_UNData_UIS", "This data set provides information on education at various levels.");
             DescriptionList.Add("DF_UNData_UNFCC", "This data set provides information on Greenhouse gas emissions.");
@@ -81,20 +110,6 @@ namespace UnDataApi.DataModel
             DescriptionList.Add("NASEC_IDCFINA_Q", "This data set provides financial information.");
             DescriptionList.Add("NASEC_IDCFINA_A", "This data set provides financial information.");
             DescriptionList.Add("NASEC_IDCNFSA_Q", "This data set provides financial information.");
-
-            DisplayNames.Add("DF_UNData_UNFCC", "Environmental Data");
-            DisplayNames.Add("DF_UNData_UIS", "Education Data");
-            DisplayNames.Add("DF_UNDATA_MDG", "Development Data (Population, poverty, unemployment, etc.)");
-            DisplayNames.Add("DF_UNDATA_COUNTRYDATA", "Development Data (Population, poverty, unemployment, etc.)");
-            DisplayNames.Add("DF_UNDATA_WDI", "Development Data (Financial growth, military capability, imports and exports, etc.)");
-            DisplayNames.Add("DF_UNDATA_SDG_PILOT", "Development Data - Sustainable development goals");
-            DisplayNames.Add("DF_UNDATA_WPP", "World Population Prospects");
-            DisplayNames.Add("NA_MAIN", "National Accounts Aggregate Data");
-            DisplayNames.Add("NASEC_IDCNFSA_A", "Annual Non-Financial Accounts");
-            DisplayNames.Add("NASEC_IDCFINA_Q", "Quarterly Financial Accounts");
-            DisplayNames.Add("NASEC_IDCFINA_A", "Annual Financial Accounts");
-            DisplayNames.Add("NASEC_IDCNFSA_Q", "Quarterly Non-Financial Accounts");
-
         }
     }
 }

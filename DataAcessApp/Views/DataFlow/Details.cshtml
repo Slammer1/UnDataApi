@@ -17,35 +17,49 @@
     @Html.AntiForgeryToken()
 
 <div class="form-horizontal">
+    @Html.HiddenFor(model => model.Id)
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @foreach (var item in Model.DimensionList.Where(id => id.Id != "TIME_PERIOD"))
+    @for (int i = 0; i < Model.DimensionList.Count; i++)
     {
+        if (Model.DimensionList[i].Id == "TIME_PERIOD") { continue; }
         <div class="form-group">
-            @*@Html.DisplayFor(model => item.CodeListName)*@
             <div class="col-md-10">
-                @Html.DropDownListFor(model => item.SelectedCode, new SelectList(item.Codes, "Key", "Value", item.SelectedCode), new { id = "CodeSelect", @class = "form-control" })
-                @*@Html.ValidationMessageFor(model => model.EmpTypeSelected, "", new { @class = "text-danger" })*@
+                @Html.DropDownListFor(model => Model.DimensionList[i].SelectedCode, new SelectList(Model.DimensionList[i].Codes, "Key", "Value", Model.DimensionList[i].SelectedCode), new { id = "CodeSelect", @class = "form-control" })@Html.HiddenFor(model => Model.DimensionList[i].SelectedCode)@Html.HiddenFor(model => Model.DimensionList[i].Codes)
+                @Html.HiddenFor(model => Model.DimensionList[i])
             </div>
         </div>
-        @*<script>
-            var empTypeName = @Model.DimensionList.;
-            var dd = document.getElementById("EmpTypeSelected");
-            var o = document.createElement("option");
-            o.text = "-- Select an Employee Type --";
-            o.value = "";
-            o.selected = empTypeName == "";
-            dd.add(o, 0);
-        </script>*@
+
     }
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+
+    @*@foreach (var item in Model.DimensionList.Where(id => id.Id != "TIME_PERIOD"))
+        {
+            <div class="form-group">
+                @Html.DisplayFor(model => item.CodeListName)
+                <div class="col-md-10">
+
+                    @Html.HiddenFor(model => model.DimensionList)
+                </div>
             </div>
+            <script>
+                    var empTypeName = @Model.DimensionList.;
+                    var dd = document.getElementById("EmpTypeSelected");
+                    var o = document.createElement("option");
+                    o.text = "-- Select an Employee Type --";
+                    o.value = "";
+                    o.selected = true;
+                    dd.add(o, 0);
+                </script>
+        }*@
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" formaction=@Url.Action("Submit") formmethod="post" class="btn btn-default" />
         </div>
     </div>
-}
+</div>
+    }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "")
 </div>
+
 

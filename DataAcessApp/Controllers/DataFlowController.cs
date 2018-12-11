@@ -13,35 +13,38 @@ namespace DataAcessApp.Controllers
     {
         static UnDataService service;
         static List<DataFlow> flows;
+        static DataStructure struc;
         // GET: DataFlow
         public ActionResult DataFlowIndex()
         {
             flows = new List<DataFlow>();
             service = new UnDataService();
             flows = service.AllDataFlows;
-            //foreach(DataFlow fl in flows)
-            //{
-            //    fl.GetDataStructure();
-            //}
             return View(flows);
         }
 
         // GET: DataFlow/Details/5
         public ActionResult Details(string id)
         {
-            DataFlow flow = new DataFlow();
-            foreach (DataFlow fl in flows)
-            {
-                if(fl.Id == id)
-                {
-                    flow = fl;
-                    break;
-                }
-                
-            }
+            DataFlow flow = flows.Single(flo => flo.Id == id);
             DataStructure structure = flow.GetDataStructure();
             structure.GetCodeLists();
+            struc = structure;
             return View(structure);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Submit(DataStructure str)
+        {
+            List<string> selectedCodes = new List<string>();
+            foreach(Dimension dim in str.DimensionList)
+            {
+                selectedCodes.Add(dim.SelectedCode);
+            }
+            QueryResult result =service.GetDataFromDataFlowAndDimensions(str.Id, selectedCodes).Result;
+            result.BuildDisplayName(struc.DimensionList, selectedCodes);
+            return View("DataResult", result);
         }
 
         // GET: DataFlow/Create
