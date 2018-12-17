@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnDataApi", "UnDataApi\UnDa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnDataApiTests", "UnDataApiTests\UnDataApiTests.csproj", "{16D6BBD1-76E7-4D41-B251-45DA59C8227E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAcessApp", "DataAcessApp\DataAcessApp.csproj", "{F114A028-4DFD-48F6-80B4-BCFD94D37DF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAcessApp", "DataAcessApp\DataAcessApp.csproj", "{F114A028-4DFD-48F6-80B4-BCFD94D37DF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

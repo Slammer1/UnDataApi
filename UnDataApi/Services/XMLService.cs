@@ -104,6 +104,97 @@ namespace UnDataApi.Services
             return localFlows;
         }
 
+        public static HashSet<string> GetValidCodes(string id1, string id2)
+        {
+            HashSet<string> set = new HashSet<string>();
+            string xmlToParse = "";
+            try
+            {
+                xmlToParse = File.ReadAllText("Files\\Codes.xml");
+            }
+            catch (FileNotFoundException e)
+            {
+                throw new FileNotFoundException("The Codes.xml file did not get copied to the " +
+                    "output directory correctly. Please click on the file and, in the properties," +
+                    "adjust the build action and it should be copied correctly because the properties" +
+                    "have been changed. That or do a clean build.");
+            }
+            Stream stream = new MemoryStream(Encoding.UTF8.GetBytes(xmlToParse));
+            XmlReader reader = XmlReader.Create(stream);
+            reader.ReadToFollowing(id1);
+            reader.ReadToDescendant(id2);
+            reader.ReadToDescendant("CODE");
+            do
+            {
+                set.Add(reader.ReadInnerXml());
+            }
+            while (reader.ReadToNextSibling("CODE"));
+            return set;
+        }
+
+        internal static Dictionary<string, HashSet<string>> GetSeriesKeysFromXml(Stream stream)
+        {
+            Dictionary<string, HashSet<string>> seriesKeys = new Dictionary<string, HashSet<string>>();
+            XmlReader reader = XmlReader.Create(stream);
+            reader.ReadToDescendant("message:DataSet");
+            do
+            {
+                switch (reader.NodeType)
+                {
+                    case XmlNodeType.Element:
+                        switch (reader.Name)
+                        {
+                            case "generic:SeriesKey":
+                                while (reader.ReadToDescendant("generic:Value"))
+                                {
+                                    do
+                                    {
+                                        string key = "", value = "";
+                                        while (reader.MoveToNextAttribute())
+                                        {
+
+                                            switch (reader.Name)
+                                            {
+                                                case "id":
+                                                    key = reader.Value;
+                                                    break;
+
+                                                case "value":
+                                                    value = reader.Value;
+                                                    if(seriesKeys.ContainsKey(key))
+                                                    {
+                                                        if(seriesKeys[key].Contains(value))
+                                                        {
+                                                            //do nothing and move on
+                                                        }
+                                                        else
+                                                        {
+                                                            seriesKeys[key].Add(value);
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        seriesKeys.Add(key, new HashSet<string> { value});
+                                                    }
+                                                    break;
+                                            }
+
+                                        }
+                                    } while (reader.ReadToNextSibling("generic:Value"));
+
+                                }
+                                break;
+                        }
+
+                        break;
+                    case XmlNodeType.Text:
+                        break;
+                }
+            } while (reader.Read());
+            reader.Close();
+            return seriesKeys;
+        }
+
         internal static DataSet ProcessQuery(Stream stream)
         {
             List<DataSeries> seriesList = new List<DataSeries>();

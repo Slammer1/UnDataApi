@@ -1,7 +1,7 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using UnDataApi.Services;
 
 namespace UnDataApi.DataModel
 {
@@ -31,5 +31,34 @@ namespace UnDataApi.DataModel
                 Dictionary<string, string> codes = dim.GetCodeList();
             }
         }
+
+        public Dictionary<string, HashSet<string>> GetSeriesKeys(string dataFlowId)
+        {
+            Services.UnDataService service = new Services.UnDataService();
+            Dictionary<string, HashSet<string>> seriesKeysRaw = service.GetSeriesKeysForDatFlow(dataFlowId).Result;
+            SeriesKeys = seriesKeysRaw;
+            return seriesKeysRaw;
+           
+        }
+
+        public void InitializeCodesForDimensions(string id)
+        {
+            this.GetCodeLists();
+            this.FilterCodeLists(id);
+        }
+
+        private void FilterCodeLists(string id)
+        {
+            foreach (Dimension dim in DimensionList.Where(dim => dim.Id !=  "TIME_PERIOD" && dim.Id != "AGE" && 
+            dim.Id != "SERIES" && dim.Id != "REF_AREA" && dim.Id != "INDICATOR" && dim.Id != "OCCUPATION" && dim.Id != "ACTIVITY"))
+            {
+                HashSet<string> validCodes = XMLService.GetValidCodes(id, dim.Id);
+                dim.Codes = dim.Codes.Where(code => validCodes.Contains(code.Key)).ToList(); 
+            }
+        }
+
+       
+
+        public Dictionary<string, HashSet<string>> SeriesKeys { get; set; }
     }
 }

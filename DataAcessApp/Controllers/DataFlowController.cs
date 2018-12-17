@@ -28,7 +28,7 @@ namespace DataAcessApp.Controllers
         {
             DataFlow flow = flows.Single(flo => flo.Id == id);
             DataStructure structure = flow.GetDataStructure();
-            structure.GetCodeLists();
+            structure.InitializeCodesForDimensions(id);
             struc = structure;
             return View(structure);
         }

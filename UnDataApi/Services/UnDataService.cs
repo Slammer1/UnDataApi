@@ -40,6 +40,30 @@ namespace UnDataApi.Services
         {
 
         }
+
+        internal async Task<Dictionary<string, HashSet<string>>> GetSeriesKeysForDatFlow(string dataFlowId)
+        {
+
+            HttpResponseMessage response = await UnApiClient.GetAsync("http://data.un.org/ws/rest/data/" + dataFlowId + @"/" + "?detail=serieskeysonly");
+            Dictionary<string, HashSet<string>> seriesKeys = new Dictionary<string, HashSet<string>>();
+            if (response.IsSuccessStatusCode)
+            {
+                Stream stream = response.Content.ReadAsStreamAsync().Result;
+                seriesKeys = ProcessSeriesXml(stream);
+            }
+
+            if (seriesKeys == null)
+            {
+                throw new Exception("Error getting DataFlows");
+            }
+            return seriesKeys;
+        }
+
+        private Dictionary<string, HashSet<string>> ProcessSeriesXml(Stream stream)
+        {
+            return XMLService.GetSeriesKeysFromXml(stream);
+        }
+
         public DataStructure GetDataStructure(string agency, string structureId)
         {
             DataStructure structure = GetDataStructureFromUnApi(agency, structureId).Result;

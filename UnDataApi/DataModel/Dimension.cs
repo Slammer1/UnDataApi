@@ -36,12 +36,10 @@ namespace UnDataApi.DataModel
             SelectedCode = "";
             foreach(string key in CodeList.Keys)
             {
-                //if(!key == "")
                 this.Codes.Add(new Code
                 {
                     Key = key,
                     Value = CodeList[key],
-
                 });
             }
             return codeList;
