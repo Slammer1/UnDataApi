@@ -6,14 +6,42 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using NSIEstatV20Service;
 
-namespace UnDataApi.Services
+namespace UNDataWSClient.Services
 {
     public class UNDataSOAPService
     {
 
+        public void SendQueryStructurRequest()
+        {
+            string queryStructureXML = "";
+            try
+            {
+                queryStructureXML = File.ReadAllText(@"C:\Users\JWNolen\source\repos\UnDataApp\UNDataWSClient\Files\BasicQueryStructure.xml");
+            }
 
-        private void SendRequest(XmlDocument request)
+            catch (FileNotFoundException e)
+            {
+                throw new FileNotFoundException("The TestXml.txt file did not get copied to the " +
+                    "output directory correctly. Please click on the file and, in the properties," +
+                    "adjust the build action and it should be copied correctly because the properties" +
+                    "have been changed. That or do a clean build.");
+            }
+            XmlDocument doc = new XmlDocument();
+            doc.Load(queryStructureXML);
+            string tempFileName = Path.GetTempFileName();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat(SoapConstants.SoapRequest, "web", SoapConstants.TargetNs);
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(sb.ToString());
+
+        }
+
+
+
+
+            private void SendRequest(XmlDocument request)
         {
             if (request == null)
             {

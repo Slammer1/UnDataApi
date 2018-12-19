@@ -1,0 +1,30 @@
+﻿<RegistryInterface xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message">
+  <!--NSI Web client v3.11.0.0-->
+  <Header>
+    <ID>UNKNOWN</ID>
+    <Test>false</Test>
+    <Prepared>2018-12-17T21:51:58.8527209+00:00</Prepared>
+    <Sender id="UNKNOWN" />
+    <Receiver id="unknown" />
+  </Header>
+  <QueryStructureRequest resolveReferences="false">
+    <CodelistRef xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry">
+      <AgencyID>IAEG</AgencyID>
+      <CodelistID>CL_UNIT_MDG</CodelistID>
+      <Version>1.0</Version>
+    </CodelistRef>
+    <DataflowRef xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry">
+      <AgencyID>UIS</AgencyID>
+      <DataflowID>DF_UNData_UIS</DataflowID>
+      <Version>1.1</Version>
+      <Constraint ConstraintType="Content">
+        <ConstraintID xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common">UNIT</ConstraintID>
+        <CubeRegion isIncluded="true" xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common">
+          <Member isIncluded="true">
+            <ComponentRef>UNIT</ComponentRef>
+          </Member>
+        </CubeRegion>
+      </Constraint>
+    </DataflowRef>
+  </QueryStructureRequest>
+</RegistryInterface>
